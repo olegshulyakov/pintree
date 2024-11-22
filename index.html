@@ -330,7 +330,7 @@
     // Create bookmark card element
     function createCard(title, url, icon) {
       const card = document.createElement('div');
-      card.className = 'cursor-pointer flex items-center hover:shadow-sm transition-shadow p-4 bg-white shadow-sm ring-1 ring-gray-900/5 dark:pintree-ring-gray-800 rounded-lg hover:bg-gray-100 dark:pintree-bg-gray-900 dark:hover:pintree-bg-gray-800';
+      card.className = 'cursor-pointer flex items-center hover:shadow-sm transition-shadow px-4 py-6 bg-white shadow-sm ring-1 ring-gray-900/5 dark:pintree-ring-gray-800 rounded-lg hover:bg-gray-100 dark:pintree-bg-gray-900 dark:hover:pintree-bg-gray-800';
       card.onclick = () => window.open(url, '_blank'); // Make the whole card clickable
 
       const cardIcon = document.createElement('img');
@@ -347,7 +347,7 @@
       cardContent.className = 'flex flex-col overflow-hidden'; // Ensure the content is hidden if too long
 
       const cardTitle = document.createElement('h2');
-      cardTitle.className = 'text-sm font-medium mb-1 truncate dark:text-gray-400';
+      cardTitle.className = 'text-base font-medium mb-1 truncate dark:text-gray-400';
       cardTitle.innerText = title;
 
       // Clean URL by removing http(s) and trailing slash
