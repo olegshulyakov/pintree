@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: system-ui, -apple-system, ui-sans-serif, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -1594,6 +1594,11 @@ select {
   font-size: 22px;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1786,12 +1791,12 @@ select {
   transition-timing-function: linear;
 }
 
-.text-main-500 {
+.text-main-500{
   --tw-text-opacity: 1;
-  color: rgba(11, 166, 101, var(--tw-text-opacity));
+  color: rgba(11, 166, 101, var(--tw-text-opacity))
 }
 
-.dark {
+.dark{
   --tw-bg-opacity: 1;
   background-color: rgb(17 20 24 / var(--tw-bg-opacity));
 }
@@ -1802,7 +1807,7 @@ select {
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
   /* bg-gray-400 */
   --tw-text-opacity: 1;
-  color: rgba(11, 166, 101, var(--tw-text-opacity));
+  color: rgba(11, 166, 101, var(--tw-text-opacity))
   /* text-indigo-500 */
 }
 
@@ -1825,7 +1830,7 @@ select {
 }
 
 :root {
-  --folderColor: #3cb884;
+  --folderColor: #3CB884;
   --paperColor: #ffffff;
 }
 
@@ -1839,7 +1844,7 @@ select {
 }
 
 .folder__back {
-  fill: #0ba665;
+  fill: #0BA665;
   rx: 10;
   ry: 10;
 }
@@ -1900,7 +1905,7 @@ select {
   rx: 13;
   ry: 13;
   y: 10;
-  height: 80;
+  height:80;
   transform: skewY(0deg) scaleY(0.6);
 }
 
@@ -1908,12 +1913,12 @@ select {
   rx: 13;
   ry: 13;
   y: 0;
-  height: 80;
+  height:80;
   transform: skewY(0deg) scaleY(0.6);
 }
 
 .loader {
-  border-top-color: #0ba665;
+  border-top-color: #0BA665;
   /* You can change this color as needed */
   animation: spin 1s linear infinite;
 }
@@ -1928,7 +1933,7 @@ select {
   }
 }
 
-.card-icon-bg {
+.card-icon-bg{
   background-color: rgb(129 132 138 / 10%);
 }
 
@@ -2387,3 +2392,4 @@ select {
     stroke: #9ca3af;
   }
 }
+
