@@ -1174,10 +1174,6 @@ select {
   width: 1.5rem;
 }
 
-.w-72 {
-  width: 18rem;
-}
-
 .w-8 {
   width: 2rem;
 }
@@ -1444,6 +1440,11 @@ select {
   background-color: rgb(255 255 255 / 0.9);
 }
 
+.bg-zinc-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1456,12 +1457,16 @@ select {
   fill: #374151;
 }
 
+.fill-transparent {
+  fill: transparent;
+}
+
 .fill-zinc-100 {
   fill: #f4f4f5;
 }
 
-.fill-zinc-700 {
-  fill: #3f3f46;
+.stroke-gray-400 {
+  stroke: #9ca3af;
 }
 
 .stroke-gray-500 {
@@ -1719,11 +1724,6 @@ select {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-zinc-800\/5 {
-  --tw-shadow-color: rgb(39 39 42 / 0.05);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .ring-1 {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -1732,10 +1732,6 @@ select {
 
 .ring-gray-900\/5 {
   --tw-ring-color: rgb(17 24 39 / 0.05);
-}
-
-.ring-zinc-900\/5 {
-  --tw-ring-color: rgb(24 24 27 / 0.05);
 }
 
 .filter {
@@ -1790,12 +1786,12 @@ select {
   transition-timing-function: linear;
 }
 
-.text-main-500{
+.text-main-500 {
   --tw-text-opacity: 1;
-  color: rgba(11, 166, 101, var(--tw-text-opacity))
+  color: rgba(11, 166, 101, var(--tw-text-opacity));
 }
 
-.dark{
+.dark {
   --tw-bg-opacity: 1;
   background-color: rgb(17 20 24 / var(--tw-bg-opacity));
 }
@@ -1806,7 +1802,7 @@ select {
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
   /* bg-gray-400 */
   --tw-text-opacity: 1;
-  color: rgba(11, 166, 101, var(--tw-text-opacity))
+  color: rgba(11, 166, 101, var(--tw-text-opacity));
   /* text-indigo-500 */
 }
 
@@ -1829,7 +1825,7 @@ select {
 }
 
 :root {
-  --folderColor: #3CB884;
+  --folderColor: #3cb884;
   --paperColor: #ffffff;
 }
 
@@ -1843,7 +1839,7 @@ select {
 }
 
 .folder__back {
-  fill: #0BA665;
+  fill: #0ba665;
   rx: 10;
   ry: 10;
 }
@@ -1904,7 +1900,7 @@ select {
   rx: 13;
   ry: 13;
   y: 10;
-  height:80;
+  height: 80;
   transform: skewY(0deg) scaleY(0.6);
 }
 
@@ -1912,12 +1908,12 @@ select {
   rx: 13;
   ry: 13;
   y: 0;
-  height:80;
+  height: 80;
   transform: skewY(0deg) scaleY(0.6);
 }
 
 .loader {
-  border-top-color: #0BA665;
+  border-top-color: #0ba665;
   /* You can change this color as needed */
   animation: spin 1s linear infinite;
 }
@@ -1932,7 +1928,7 @@ select {
   }
 }
 
-.card-icon-bg{
+.card-icon-bg {
   background-color: rgb(129 132 138 / 10%);
 }
 
@@ -2192,6 +2188,11 @@ select {
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
+.dark\:text-gray-300:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .dark\:text-gray-400:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -2314,6 +2315,10 @@ select {
     width: 15rem;
   }
 
+  .lg\:grow {
+    flex-grow: 1;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2364,12 +2369,12 @@ select {
     fill: #f0fdfa;
   }
 
-  .group:hover .\[\@media\(prefers-color-scheme\:dark\)\]\:group-hover\:stroke-teal-600 {
-    stroke: #0d9488;
+  .group:hover .\[\@media\(prefers-color-scheme\:dark\)\]\:group-hover\:stroke-gray-400 {
+    stroke: #9ca3af;
   }
 
-  .group:hover .\[\@media\(prefers-color-scheme\:dark\)\]\:group-hover\:stroke-zinc-400 {
-    stroke: #a1a1aa;
+  .group:hover .\[\@media\(prefers-color-scheme\:dark\)\]\:group-hover\:stroke-teal-600 {
+    stroke: #0d9488;
   }
 }
 
@@ -2378,8 +2383,7 @@ select {
     fill: rgb(45 212 191 / 0.1);
   }
 
-  .\[\@media_not_\(prefers-color-scheme\:dark\)\]\:stroke-teal-500 {
-    stroke: #14b8a6;
+  .\[\@media_not_\(prefers-color-scheme\:dark\)\]\:stroke-gray-400 {
+    stroke: #9ca3af;
   }
 }
-
