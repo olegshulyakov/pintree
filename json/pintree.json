@@ -61,6 +61,13 @@
           {
             "type": "link",
             "addDate": null,
+            "title": "Jellyfin",
+            "icon": "https://jellyfin.org/images/favicon.ico",
+            "url": "http://ds918.local:8096/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
             "title": "MKVToolNix",
             "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC5ElEQVQ4jYVTS2sTYRQ9M5MmzqOdpGmc0URNG20KLb7BR61mIYFY0YUIIii4cCcu/AHSf+BWcOFGEFHEVetOEKE+qG2tbYOjtmOTtEnzmM40M5mZLxkXUqhV8e7O5ZxzuS8GfwYzPDzcJ0nScZZlOyiKMkzTdP/C+0Xemkin0ycMw7heKBQCrVZrN8dx3RRFrVqWtf43A2oz6OnpEcPh8B1FUaY0TXsHgJai0sFOtl0+q6qfD7lu/gaQowBvQ0NvNhBFMWqaZlPTtEkAKwByxXzx9ZWlpYMpQkZDwMtHwJnNGt9m4HleiBCiA9CTyQv84VPnBjvp1onEk7sXYnY55AAhi2GupK9e/XAykbBGRkZaWw0omvbcYDDeMZi+dksMyjcZiuqo9J5B18RzuICjCIJWz+dPv1SUaDKZHP1tiLIsy4FA4EjvQObodmnv7b6EX9g/0AVNSmLOF8NkZJ/+rFZ6aNSrY36//5xhGOs+AEilUj6e53fXarWIaZqC09w2EI2ssZcvHkMkEkH56C7cs2ksfpgW6eKXkzsl0rBt8llV1XE6k8kEPM8bqtVq3MzMzFtCSMlcXwlGwjREMQiAQleYx85wC6aep3nW669WK4YgCC8ANHyVSmXQtu3e6enpVwBox3GyfnPBXS3lWlNTk3QsFoOqLmF8/A1WCvOGUVGVUik3Pz+vEADw6br+HUD/0NDQJZ7nNdM0WcNYw7Onj8nHj5NMd3cfs/BDx9v3X9aMqjLGc83F39aYzWYXAdxnGKbdcZw2Xdfnms0mV6/Xf2S/ruRYVtlj2w1iN1YnuEBjrr1dji8vLze33oE7Oztb3UhyHDeaSCR2+P3r6sLCxAMANoC17r4D/ZZluQAa//wFAHBd16QoqhIMBlOyLG8LhUJqPB4XaZo+XygUZi3L+gaA/PELW8IvCMJeSZIygiBECSF0uVz+VCwWxwAUAbT+Z7DRYmdbW1sUAOW6bgFAeaM6APwEF5pPHdxVe9sAAAAASUVORK5CYII=",
             "url": "http://ds918.local:5810/"
@@ -775,6 +782,13 @@
             "title": "DigitalOcean",
             "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABx0lEQVQ4jYXTP0jUYRgH8M/z87rsNBoiwpaWpFwCwTFabGyOhhqCREqIJKSIwBNaGiqKSIQcG1uaGnJoaIlSgopoqwYnIY/zTlPvbfDn3c8weuAd3ud5vs/f7xOKUk0ZTuIyzqAPCYuYk5nV8lE1WtuQKIB7MYVR9NhdGpjFHdWodQLcS/s1PZecFYWgyXr+LxV0SXiF86pRC9WUSR7gmhC5wwfhqWRBJrQMYkwyWPB5guthMg0Jb1DJDbMYV436X/PpxX3JSF5VQ+ZUJlxBJXd7tysYue6GsJBrKlouZRhu95Z5uCt4Z5Dpgma4lGdfFtZk5v8J7sg8NvLB9pWUDYDfkk2//gvPJG0WiJLbsbSzzFTGMWS6bDrum3Ox2bZvbWRrrcliSTX1KjmgpO5WLOMI3qJiw5IvTqCGbb6MdfJ7nQkjNny1aqJQR7n9ugtka3gkGcx96pJnJaxiCV3upqNaDmv5iW6hpqnfVOrXNI6hApFmhE9hJu1RU9ZwVTIp+SGc1qNpxUG8x6F2bUnCS+GCatQzo7FuIlZyc4+wDw0TsaKsib2F1hp4rOLiNl+KR/JC8lmmacAatlbLGr5jTjItzLvZOec/qROjg5oIuV8AAAAASUVORK5CYII=",
             "url": "https://www.digitalocean.com/"
+          },
+{
+            "type": "link",
+            "addDate": null,
+            "title": "Head Hunter Skill Quizzes",
+            "icon": "https://i.hh.ru/favicons/hh.ico",
+            "url": "https://londeren.github.io/hh-skill-verifications-quizzes/"
           },
           {
             "type": "link",
