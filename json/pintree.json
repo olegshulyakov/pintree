@@ -82,6 +82,13 @@
           {
             "type": "link",
             "addDate": null,
+            "title": "Calibre Web",
+            "icon": "https://calibre-ebook.com/favicon.png",
+            "url": "http://ds918.local:8083/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
             "title": "yt-dlp",
             "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABO0lEQVQ4jY2SvS5EURSFv3NnCgqRyCi8gE4v3kH0ovAAummU8wKeQaOYhILQKEUypUaFUifRiMkd7s9SzDqcuXKZm6zsu//WPvsn0PIJApBZrQOoLfZXopPnsodmUKwkWAc27LoP8NiMaVboWvYEx4KxQMbYtt5/z18QjJLEJkaCJUFnph1BJtgVXDvwU5ALXoxcMLHv0DlTEjNeJFUmgkIwFCwbQ9sKwZNgK61+5MQPVy6tnyYxZ7aVglpQCc4FvS6wD1RAx3t/Ba6Au6TPG+AN2AZWgBrYAd4xa2Xm0i30k9lk/u/bVxqFIEfwYILCsvJzB0kLA9uqBN8Ee8kA46DixPtGOtwICU5ihQOvq23/TdSCS8FqiKcpWAM2gUV+TjXKkOgZ8BzgduaQ/jzR9ssNIVWYn0hhukq+AE/n+s4ATF8RAAAAAElFTkSuQmCC",
             "url": "http://ds918.local:3033/"
@@ -94,49 +101,46 @@
             "url": "http://ds918.local:9091/"
           },
           {
-            "type": "folder",
+            "type": "link",
             "addDate": null,
-            "title": "Starr",
-            "children": [
-              {
-                "type": "link",
-                "addDate": null,
-                "title": "Prowlarr",
-                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC80lEQVQ4jW2TTWwUdRiHn/c/M/vR2RZ2XHan6ZaDC4vamJpw8CPUr16oMRxITFRIRS56MfHM1cS78cStErh54uBJMESSEpqG1KY1tgVtC3R2253dre3uzuzM/D1QDCS8pzd58/td3ucRnpnVb0jb//KBaL7QmgmtKYkAUBPhdy38tD/Ib8d/JHiakadL/QJunHBJC+eVnc+bbhUzP4IxMka0cY9wbZZ4z29Koq8aiu+LM3j/F9Qv4Maay5jpM5nxKey3PsMsHUNSA7T3Y3bnfyXVeUSycQfZnIN+77ohfFWcwTOWPiGVMfkOKz2d+/BrBk9/i+GUEWWAEvqtbbp/zbP59xZxYOBUXiXyH5zQUZS+WOWGcrJMauFcZnwK+90vESsLWoMyCNtNGssLREGf0cIQO3WfZukdBt74GC2cc7JMmgjTys479tufEyfC1uIizqEsqrnFw5u/0F1bpNcL6AwOY/fb6JV7pN+fort809F7/rSpE05ZbhXLPU57p0Hg70AnpvbnAo2VJVLFUV45fZYwV+SPmR+w5m+RH3ax3CrB6p1TJuCa+REwM+TsDIltEZ98j6ZuUX5UYrdSwasc5dDaY0b7Hj2B5twtckdiEFz15JlC1A+pLdxlY/UBQd9geGwSr/wmVnUCp1ilZxewXn6dw7ZFKuqQND0ATMCLW4/LobdO0KhRKDqo5VnsyjjHPjpL5iWXaGMF3W+xe/Q1sCzyqkO4XSMCzxTF7f7Wyqf2zhojQymIm+i6T+Kvk9Ex2kxhhT3Soql7mximjWV16PbaiHBbobmS7Df8ztzP6ChEo0AUKg6RJEaFHUCTaCiWChScHD3/PjoOfRKuKL/LDYFrvX/u0l2fhSQCUc8YckC7KIYGM1itZQL/PiJcO8geoCxc1mKeSZfGSJdPYuSOIMoEQCcR8d42wcN5gtoSoqPrhn6C8vMyoS5pnZyX1EDezBVR2cMAJN0W0V4dHXaaIuqqQfK8TC/UGSaA0sGpJrxY5/8AucdVhU8wLxAAAAAASUVORK5CYII=",
-                "url": "http://ds918.local:9696/"
-              },
-              {
-                "type": "link",
-                "addDate": null,
-                "title": "Radarr",
-                "url": "http://ds918.local:7878/"
-              },
-              {
-                "type": "link",
-                "addDate": null,
-                "title": "Sonarr",
-                "url": "http://ds918.local:8989/"
-              },
-              {
-                "type": "link",
-                "addDate": null,
-                "title": "Lidarr",
-                "url": "http://ds918.local:8686/"
-              },
-              {
-                "type": "link",
-                "addDate": null,
-                "title": "Jackett",
-                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABCElEQVQ4jbXTMUqDQRQE4G9jRAwGNeQYliKCjRa5gIWVHsHC0suIVopFwELE3hNYWIhooxYWEiRYCGEt3B82a0yK4MCD5TEzO2+XF2KMQYEQwjZW8ZBaK7iJMXZLrhhjqAqz2MI1BjjBaTpfYQMzQ5okbOIQL4hZXeCy6D3hAPO5wX5BGmdQ1V6MMdTSJK1fs01GG6YxaE1r8D8J7vE1RtTH47gEZ4n0F3ro5prKYClLMAkV5ydBCKGWJXjGEe5GCG9xnDhDCRZQT803rKWoJd6xnjjQCCE06sUP9NLijPqVTbwW5u1aQe5jB+fpxgof6fF28Zn1W9BJ2zbAXLGdTSzmG4jljN/5Br1cckVxiO6gAAAAAElFTkSuQmCC",
-                "url": "http://ds918.local:9117/"
-              },
-              {
-                "type": "link",
-                "addDate": null,
-                "title": "Readarr",
-                "url": "http://ds918.local:8787/"
-              }
-            ]
+            "title": "Prowlarr",
+            "icon": "https://avatars.githubusercontent.com/u/73049443",
+            "url": "http://ds918.local:9696/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
+            "title": "Radarr",
+            "icon": "https://avatars.githubusercontent.com/u/25025331",
+            "url": "http://ds918.local:7878/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
+            "title": "Sonarr",
+            "icon": "https://avatars.githubusercontent.com/u/1082903",
+            "url": "http://ds918.local:8989/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
+            "title": "Lidarr",
+            "icon": "https://avatars.githubusercontent.com/u/28475832",
+            "url": "http://ds918.local:8686/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
+            "title": "Jackett",
+            "icon": "https://avatars.githubusercontent.com/u/15383019",
+            "url": "http://ds918.local:9117/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
+            "title": "Readarr",
+            "icon": "https://avatars.githubusercontent.com/u/57576474",
+            "url": "http://ds918.local:8787/"
           }
         ]
       },
@@ -202,21 +206,21 @@
               {
                 "type": "link",
                 "addDate": null,
-                "title": "END. | Globally Sourced Menswear",
+                "title": "END",
                 "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjUlEQVQ4jd2RwQ1CMQxDnyMGYAOQWIDVugFsxgi900PEBAyAVA7oo5BDVYT+BZ8a17ISWyQcdvueuQiJc3M/LbONxDPYjD47VME9cT5tYKI098tQM7foigbKRGwhZ2CiXN1r1A8zEBzj3GGbNSvXKIrBe+VHeE8ZGNQ/qxFAndpuXpb5qxp5BfuBn094Ao8lKUeNS9AMAAAAAElFTkSuQmCC",
                 "url": "https://www.endclothing.com/row/"
               },
               {
                 "type": "link",
                 "addDate": null,
-                "title": "Интернет магазин одежды и обуви. Купить обувь, купить одежду, аксессуары в онлайн магазине Lamoda.",
+                "title": "Lamoda.",
                 "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRUlEQVQ4jZ2TzUpCURSFv32uekMNHASZFZHmICiFCBoUkQaBIBG+QA0a+BjNfYFeokY9QUg0L9MGRaiIEIYKYph2GtgfXjN1j85esL699oYj19mOPr3oUG0wUnlckIwbyFGqpUc1/4aocc0A1QbYekW/V4itK5wOSJ13/oVYAI9lTb2ph76J6icuzwsPJT0UwJLApsA/I2TzPwD/tBAKCIaCs/T74ARBn1BrQK3Z7Q93FXNTUKtrIiFrYIsS8Am5z+n7G4pWGy4zmram71oWwMqCcPPUjZnYUqRvu+/tVUWuOARgaVa4L2iCXsHtFAoViK0Ji16hXNFM2AcA3CZ4JoXEpoFpB0PB8Z4i/wymAyJhhdlzdjk4aX3nsinYCQnpjOb1DaIhIVfUlF4gGhau7rr6n4BxSnlc45s9LlDJuME4kK/v/AELemZAB5UotgAAAABJRU5ErkJggg==",
                 "url": "http://www.lamoda.ru/"
               },
               {
                 "type": "link",
                 "addDate": null,
-                "title": "ASOS | Shop women's fashion & men's clothing | Free Delivery & Returns",
+                "title": "ASOS",
                 "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjklEQVQ4jZWTu6rqUBCGv2x1YxWMEFJbCSaVhVgpiJX4CtpZ2NkIvoO9nYVor421YC1eGoOg+ALBKxYWyezinBMM2SnOwCrmh/nWP7NmKbquy/P5JBaLAZBIJDBNE9M00TQNAMdx2O12rFYrQqFpmgACSLValf1+L1ExmUzk8Xj4OSA+oNVqied5kcW/BSCKpmlSKpWYzWYBZ6fTieVyieu6FItFLMsKuVcUBQzDCNnu9/vy/f3ttwZIt9v91QH1ej0gzufzQOHnGQwGIcBXPp8P2BoOh+FJ/43RaBTSvtLptJ+8329s244EnM9nHMcJAj4TEcHzvEiAiPDH+Qfgcrn4STKZJJvNRgIymQy6rgcB2+02IDQajUhAs9kMi4ZhiG3bgen2er3QC7Tb7dCiAaKoqiqVSoXpdBoAbzYbFosFrutSLpcpFAqhyxVFAVVVBZBOp/Nfa+wv0j8AILVaTQ6HQ2TBeDyW+/0ebEHXdXm9Xv53jsfjWJZFLpcjlUoBcL1eWa/XHI9HbrdboI0fTCChS/fHKcQAAAAASUVORK5CYII=",
                 "url": "http://www.asos.com/"
               }
