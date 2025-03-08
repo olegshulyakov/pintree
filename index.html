@@ -75,7 +75,7 @@
     <!-- Static Sidebar for Desktop -->
     <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-60 lg:flex-col">
       <div
-          class="flex flex-col border-r border-gray-200 dark:pintree-border-gray-800 bg-zinc-100 px-4 h-full font-semibold dark:pintree-bg-gray-900">
+        class="flex flex-col border-r border-gray-200 dark:pintree-border-gray-800 bg-white px-4 h-full font-semibold dark:pintree-bg-gray-900">
         <div class="flex p-0 h-16 shrink-0 items-center">
           <img class="pl-2 h-8 w-auto" src="assets/logo.svg" alt="Pintree">
           <a href="" class="ml-4 font-extrabold text-2xl dark:text-white">Pintree</a>
@@ -95,9 +95,9 @@
       <div
         class="items-center justify-between sticky top-0 z-40 flex h-16 shrink-0 gap-x-4 border-b border-gray-200 dark:pintree-border-gray-800 bg-white dark:pintree-bg-gray-900 px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
         <div class="h-full items-center flex flex-1 gap-x-4 self-stretch lg:gap-x-6 justify-between">
-          <div class="flex lg:grow gap-x-4 justify-between">
+          <div class="flex gap-x-4 justify-between">
             <img class="pl-2 h-8 w-auto lg:hidden" src="assets/logo.svg" alt="Pintree">
-            <div class="hidden lg:block relative w-full h-full items-center justify-between">
+            <div class="hidden lg:block relative w-72 h-full items-center justify-between">
               <button id="searchButton" class="absolute h-full text-gray-400 rounded">
                 <svg class="pointer-events-none absolute inset-y-0 left-0 h-full w-5 text-gray-400" viewBox="0 0 20 20"
                   fill="currentColor" aria-hidden="true">
@@ -107,7 +107,7 @@
                 </svg>
               </button>
               <input id="searchInput" type="search"
-                class="text-sm text-gray-900 dark:text-gray-400 pl-8 w-full h-full border-0 focus:outline-none focus:ring-0 dark:pintree-bg-gray-900"
+                class="text-sm text-gray-900 dark:text-gray-400 pl-8 h-full border-0 focus:outline-none focus:ring-0 dark:pintree-bg-gray-900"
                 placeholder="Search...">
               <button id="clearSearchButton" class="text-sm text-gray-500 mr-4 rounded hidden">Clear</button>
             </div>
@@ -115,8 +115,7 @@
           <a href="" class="lg:hidden ml-4 font-extrabold text-2xl dark:text-white">Pintree</a>
           <div class="relative">
             <button id="themeToggleButton" type="button" aria-label="Switch theme"
-                class="group rounded-full bg-white/90 px-3 py-2 backdrop-blur transition dark:pintree-bg-gray-900 dark:ring-white/10 dark:hover:ring-white/20"
-              >
+              class="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:pintree-bg-gray-900 dark:ring-white/10 dark:hover:ring-white/20">
               <svg id="sunIcon" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                 aria-hidden="true"
                 class="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600">
@@ -128,8 +127,7 @@
                   fill="none"></path>
               </svg>
               <svg id="moonIcon" viewBox="0 0 24 24" aria-hidden="true"
-                  class="hidden h-6 w-6 fill-transparent stroke-gray-400 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-gray-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-gray-400"
-                >
+                class="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
                 <path
                   d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -297,7 +295,7 @@
     // Create bookmark card element
     function createCard(title, url, icon) {
       const card = document.createElement('div');
-      card.className = 'cursor-pointer flex items-center hover:shadow-sm transition-shadow px-4 py-6 bg-white shadow-sm ring-1 ring-gray-900/5 dark:pintree-ring-gray-800 rounded-lg hover:bg-gray-100 dark:pintree-bg-gray-900 dark:hover:pintree-bg-gray-800';
+      card.className = 'cursor-pointer flex items-center hover:shadow-sm transition-shadow p-4 bg-white shadow-sm ring-1 ring-gray-900/5 dark:pintree-ring-gray-800 rounded-lg hover:bg-gray-100 dark:pintree-bg-gray-900 dark:hover:pintree-bg-gray-800';
       card.onclick = () => window.open(url, '_blank'); // Make the whole card clickable
 
       const cardIcon = document.createElement('img');
@@ -314,7 +312,7 @@
       cardContent.className = 'flex flex-col overflow-hidden'; // Ensure the content is hidden if too long
 
       const cardTitle = document.createElement('h2');
-      cardTitle.className = 'text-base font-medium mb-1 truncate dark:text-gray-400';
+      cardTitle.className = 'text-sm font-medium mb-1 truncate dark:text-gray-400';
       cardTitle.innerText = title;
 
       // Clean URL by removing http(s) and trailing slash
@@ -346,11 +344,11 @@
       const cardIcon = document.createElement('div');
       cardIcon.innerHTML = `
         <svg viewBox="0 0 100 80" class="folder__svg">
-          <rect x="0" y="0" rx="10" ry="10" width="100" height="80" class="folder__back" />
-          <rect x="15" y="8" rx="10" ry="10" width="70" height="60" class="paper-1" />
-          <rect x="10" y="18" rx="10" ry="10" width="80" height="50" class="paper-2" />
-          <rect x="0" y="10" rx="10" ry="10" width="100" height="70" class="folder__front" />
-          <rect x="0" y="10" rx="10" ry="10" width="100" height="70" class="folder__front right" />
+          <rect x="0" y="0" width="100" height="80" class="folder__back" />
+          <rect x="15" y="8" width="70" height="60" class="paper-1" />
+          <rect x="10" y="18" width="80" height="50" class="paper-2" />
+          <rect x="0" y="10" width="100" height="70" class="folder__front" />
+          <rect x="0" y="10" width="100" height="70" class="folder__front right" />
         </svg>
       `;
       cardIcon.className = 'mb-2';
@@ -371,7 +369,7 @@
       folders.forEach((folder, index) => {
         if (folder.type === 'folder') {
           const navItem = document.createElement('li');
-          navItem.className = 'items-center group flex justify-between gap-x-3 rounded-md p-2 text-gray-600 dark:text-gray-300 hover:text-main-500 hover:bg-gray-50 dark:hover:pintree-bg-gray-800 bg-opacity-50';
+          navItem.className = 'items-center group flex justify-between gap-x-3 rounded-md p-2 text-gray-700 dark:text-gray-400 hover:text-main-500 hover:bg-gray-50 dark:hover:pintree-bg-gray-800 bg-opacity-50';
 
           const navLinkContainer = document.createElement('div');
           navLinkContainer.className = 'flex items-center space-x-2 truncate';
