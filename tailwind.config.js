@@ -3,7 +3,11 @@ module.exports = {
   purge: ['./**/*.html'],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['system-ui', '-apple-system', 'ui-sans-serif', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
+      },
+    },
   },
   variants: {},
   plugins: [

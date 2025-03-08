@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: system-ui, -apple-system, ui-sans-serif, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -1440,6 +1440,11 @@ select {
   background-color: rgb(255 255 255 / 0.9);
 }
 
+.bg-zinc-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1452,12 +1457,16 @@ select {
   fill: #374151;
 }
 
+.fill-transparent {
+  fill: transparent;
+}
+
 .fill-zinc-100 {
   fill: #f4f4f5;
 }
 
-.fill-zinc-700 {
-  fill: #3f3f46;
+.stroke-gray-400 {
+  stroke: #9ca3af;
 }
 
 .stroke-gray-500 {
@@ -1583,6 +1592,11 @@ select {
 
 .text-\[22px\] {
   font-size: 22px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -1715,11 +1729,6 @@ select {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-zinc-800\/5 {
-  --tw-shadow-color: rgb(39 39 42 / 0.05);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .ring-1 {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -1728,10 +1737,6 @@ select {
 
 .ring-gray-900\/5 {
   --tw-ring-color: rgb(17 24 39 / 0.05);
-}
-
-.ring-zinc-900\/5 {
-  --tw-ring-color: rgb(24 24 27 / 0.05);
 }
 
 .filter {
@@ -2188,6 +2193,11 @@ select {
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
+.dark\:text-gray-300:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .dark\:text-gray-400:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -2364,12 +2374,12 @@ select {
     fill: #f0fdfa;
   }
 
-  .group:hover .\[\@media\(prefers-color-scheme\:dark\)\]\:group-hover\:stroke-teal-600 {
-    stroke: #0d9488;
+  .group:hover .\[\@media\(prefers-color-scheme\:dark\)\]\:group-hover\:stroke-gray-400 {
+    stroke: #9ca3af;
   }
 
-  .group:hover .\[\@media\(prefers-color-scheme\:dark\)\]\:group-hover\:stroke-zinc-400 {
-    stroke: #a1a1aa;
+  .group:hover .\[\@media\(prefers-color-scheme\:dark\)\]\:group-hover\:stroke-teal-600 {
+    stroke: #0d9488;
   }
 }
 
@@ -2378,8 +2388,8 @@ select {
     fill: rgb(45 212 191 / 0.1);
   }
 
-  .\[\@media_not_\(prefers-color-scheme\:dark\)\]\:stroke-teal-500 {
-    stroke: #14b8a6;
+  .\[\@media_not_\(prefers-color-scheme\:dark\)\]\:stroke-gray-400 {
+    stroke: #9ca3af;
   }
 }
 
