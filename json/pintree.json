@@ -20,42 +20,49 @@
             "type": "link",
             "addDate": null,
             "title": "Portainer",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACLklEQVQ4jY2RvWsUURTFz7nvvZndTbJ+JBaKoMbOCAmoaNAoYlDQJmptYZG/w1QWdhZ22lhYBCzsIiyJiIWgzSKxECsDRrQIJO7O7sy8ey3UfOggHrjNfYcf95wHVGluTqr3Vr2HGWEmOwxmHGp1J3ct9p8MtHrTmDe37W3Txypes5WfcsRpI9YpcraMeEPT1BzbGxfDq+1eAsDgYn9MnJtAUUAoMwZzIBZU+dUJZ6ixpUQNlGkCXgOflRZa3fNc9QCgSbKGIm9TWJjZa83jGIM7HMVypwojbxQx3o3Clz5N667M6l2EDAA8AHTP8fOepWyUngOAA51ckkEeX1/5frPWbEwaJHQv194CQP+PuP5365aGOzAdoeKAqT0syXsIJIiUZgmWLcExFFvhaQAgvwDKEt9QyJoW+CS0E17dLNbFmcIAGDIYyK3ZccGSjUDLg3Bur9CCUYYRmdeH/VElCgHq2IChQgIADSsOMfVTTDkG0/1Q9Ex1X+K0CeNKBEp8qP5yAYxdhraVxQPraVthT5Fqbrl9JNNrEvx1OmZYRawCbFKbL8pbroZZZHqSIdQRDQgECFhWdnPnz3Qu8B1gBLY6EAAYWMjHfeIeQ90U1YL18tJiUaCX96zT7yJILdE4/rPwnVEEADrNsIK8XESMEbXEMwmeSRI4mNTYSBuyW8SgI/+MgPnlpDl8ZEKS9CqB24z6RVWfs+5HUej7tczfxxV2qiB/65ENYcn8/1h/AMge+67Oe5E3AAAAAElFTkSuQmCC",
+            "icon": "https://www.portainer.io/hubfs/crane-icon.svg",
             "url": "http://ds918.local:9000/"
           },
           {
             "type": "link",
             "addDate": null,
             "title": "Glances",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADR0lEQVQ4jWWTW2hcZRSF1/7/c2bOXDLTSWYmidBQjQjGeqOFRBJEqQRjVUpDWkGltFpUihfog2LBnj5JLXh70eSpRKjQFCwIvqi0NIImttMLWm+hhUgy5jKZnJkzZ+bMOf+/fcpFXK+bb7H2Zi/CZtkQsKEBoPvCY3f3Jbb3KdI5CLhK6usT5z+/vDZfE23AtoBt60OFtx/c3/bkiYvOT7t+D24lo7EoohELOlBQflBoBuGpZbdx/uLjpxsAYAAAGASy9fClw8M17Y7l07nWo5GXMelfnvl+dfLTGefvKrPe2RrLHIltiX/ZRrIPwBQYRGux906/8miyJXFh0Vn669W25yefyPa/xIqbkmguFolPocFnBv7Yf7vTzO441zs6/p8Vhr4Ziqay2woiZXa31VoOfNx9YtAV7sEwCEkI0XRC533WeKTDzP8Zaz31Jvg4EZECAAEALdmuwVh7sqdRro1/eOd7T8u0PBQ2Q+03fO3VPMPU5v0OVT+pc2PPbPHgC2vw+g0EmYOu66rdbbtmfDSP1RxPlctlKhaLQimFfC6/N20l9hg5w0vL9FHHcX5LpVK/EFFdAACz2qZdhf7kjn3CoFQYhvB9XxARhBC8Ul7BYmlJzM3PJYUhHrBi1vTi4uLx9QSaVZhOpaQpzId8v8kMFoZhcC6X09VqVSQSiaudnZ1vOStOrnZrtcNLRnxK0NfrBlIYt30Z6IVgWXVEcmK+OE/LS8tsWRYbhkFSymImk7kEG8bA7uGR2crsjdmBnxcAkACACCLfep4nptxrUiuNVcdhIoLv+9J1Xc3gQa6Ezzw8MHRPz9Z7zwxYve8CAM6OCAEAFnnfRRqyMK1uyKnqtbA1soW01gQBMJgrbtUoeeXR17sO3LVSLIWadQUA7JsTLMCgsZ1jgWnSER3o+nj1K7MgbzYNYbClo4iLmAhWfV0tVdq7rDtOkoQAwQKAX3tGiDZeGfzcj689yzFxGlHKdHpZbPXbOUUJ3URAC7Ik/kmXUZc+/FL9nbO9n52EDbFRJrYFyNbDPxy+z7TMY00On9KS06ZpQqkQrLlukHkVvvpoom/03P/buMkEAF6cfKOLLe4PWOUlC1fG49e/2P7BFRB4M/Iv9AaM4HqC7foAAAAASUVORK5CYII=",
+            "icon": "https://nicolargo.github.io/glances/favicon.ico",
             "url": "http://ds918.local:61208/"
           },
           {
             "type": "link",
             "addDate": null,
             "title": "qBittorrent",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADYklEQVQ4jUXTTUxcVRiH8f977pk7c+c7DDMKJRVaJoYWiHxY2yakaRMbXBlJbTcuTEyMti7V9eyMxp2LylKXuGrShTGaEhKMJSAUDBWBllJkKp9z596ZuTP3nPO6Qp/1s/0RTmImEDHzXnL+Rf79UJvenWP1BgCcyoqHtpTro9bqd1Q475+8AEAAUGIWJSIztxuOP6lYX24dYrDWYlS9OoxhOFEbcck40249OtdhPh/tjP307tSU9cPNm5pKXBIlKpkHG8Enq0f2N3+WA9RrdQVmwBjBxiBUxrRCDTsWledPxTDSLW+/WUzcZWYiAHh8zFd+WdMPFp56JkqKjWGL2cCtK1wrxhGLAPd+dxGXrN2GoUt9OXpnJHv1XIFmJPN+6vuFxreruwyETTSZpdIaRjM3GiElbAeSwBU/IOFYkpXSC39VRFqGk8z7F6y373z13vwz/cHzcsV05SJi9GySMgnJ7SlJrZZGNko4U4hSV5vN4wNpchuK1raPTcSOFdrz+XVRb6gBtwGOSpjXiyle3vJ4ZdOl13qSyKUkwlDjdFsE0ytHdG/+gG9dzHM2bpkDL2S/rvrFbiUc2j/2UEhb4tgNxJNdj14c1LH23IfRBlIwHm542CjXsLjh0l4loOLLMVH+p4rtF9UhaYxhHWpoBYCIm4GiZjOEYQOjDUIFRAQQNEOwBdiSEDQVtNZgJhadWXsxHY/yVtkziZjk4WKGezriePV0CkFTQSmNsb4MhrsTuHHpJU7GLF7cqJhc2uFX8s6STDriD8dSoloL+P7sDg0XsySFw0//9smWhKVNF16theGeJKcdSV9MraPqNUSxi0UmZa8QH66n7z7KzP646PY3G74OFYuKG9DEtW5uBC26P7MNaQlWWpEKmWMRaEtG5Y0rHcufjakxQbli9fpo/qPB7pSu1gzZgrVjC/brLbh+i6UAxyOERERw2iHtNZS4PFjQE2PdH1OuWJWlUkn0pmn258febRUWJn9bPRStVl1Pz+0wmAWxgVdXRoWKnHhSvnW5E+MX2z/szdGvpVJJEACcwFgqN67OLPtfL6wdDh/5ISquDzAjnUogk7Aw0pdbuD6a/XQg70z/hwn/eyaAmPemkvPhxK0jL+jf3HYvAMDZrsxcvi22MiQmp6hwxz95AeBfrxfh4fpDRpsAAAAASUVORK5CYII=",
+            "icon": "https://www.qbittorrent.org/favicon.svg",
             "url": "http://ds918.local:9080/"
           },
           {
             "type": "link",
             "addDate": null,
             "title": "Pi-hole",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB80lEQVQ4jZWSv2uTcRDGP/d932DeaKK0DZ0cxF8FoS4iKggKCuJSJ50sKggFB/0LNFqIk6NoFbQUwaFDqYNTpIKCCBUHkULJKKlUS5omqU3zvncOSUpMtMUHvvC9g3vu7nlOaCI9nd4XbgtzGui6xnXcBe5RabBUZAu41idMhD9UtADsN7HbkUVZCiQAWGYPNYYw0v8kKJ4tloApIEJYVU8vBZXgnL/on/TxXztzj6GbwG8P1NNn4uQIxgUgb56dF5W9ZjaAMQbkOwmkM5H8mOxVT6+GgQ301rSwltQzy/36SpPhU4SlrTQBwMD/3sf1lR18KKaYrXgMz3RMu1mxZ3DDoGRgBlaG8jTczPyFxOssBkaALJBq5SPw5xwnEKpHjU9vQbsIDNx7GFkQ7peF+k5Y8GA7UF8U5r4K/cCppFAeNmYnwWh34QUcqzky9Ubn+hdh/KLyBghzwlAIh5uN7vyEz8A72u+g6hgMIS0Na2JF4+ATyN2FmZqxu23THnENsj8mcI68KmUgCRATCteMQ4A/IcxXG3s7HyqeY76lwoYGl5Vvq4IvcNxBdNoIe+AWcOWA0RcDPwXeLuGBRkxMQtRl4XOIP3Tce+koV2G9ZWPzrRmMGgSb3kEG4lOOzAr8+u/iFsYgsQSj2jimkkHWGpZ24Td6+8yIvnPSzAAAAABJRU5ErkJggg==",
+            "icon": "https://wp-cdn.pi-hole.net/wp-content/uploads/2016/12/cropped-Vortex-R-32x32.png",
             "url": "http://ds918.local:8347/admin"
           },
           {
             "type": "link",
             "addDate": null,
             "title": "Open WebUI",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABs0lEQVQ4ja2TMWsicRDFZxdByCmCbCNJZ7FFxDoHuasC6QIW9mkV8hVSCam9IGnTCn6CtNcIQbCxDMlil2aLgBz+9/9+KdzNmYsHd9w9mGKGmeHNmxkzMwMCywEcA7fAE+Bye8pjx1t5bzVFYA/4Bqz5CeVWYJ3n7G0XhsAn4A5AkncbeOecJAnwklyWZT5vdJfXhEWTawDv/Q92wHv/KxOA66L4M+AkOYA0Tf1oNKLX6+nm5oY0TSmYXV5eajKZ+E1P74Ajy8UByB4eHtRsNmVmajQamJniOFaSJPLeq1wu6/z8fJvNrUlKCrFOTk4URZHm8zlZlmk2m1Gr1Tg7OwNgf39fFxcXyhkJSKyg/vz8LDPTcDgUwGq1AuDq6opSqUSapjo4OFC/3xfAer0W4MJiG0GwWaukdz5gQRC8+R+wNQKnp6eq1+u6v78nyzJNp1Oq1SqdTufDCPlmknciPj4+Ko5jmZmiKMLMdHh4qOVy+VsRA+DIzL7nVEsvLy8aj8fhYrGg3W4H3W7XKpWKARoMBkGr1aLT6ZgkhWH49b8c0h+fsnNu9yn/0zPteOcvf/POr9D8yTqGj+uaAAAAAElFTkSuQmCC",
+            "icon": "https://openwebui.com/favicon.png",
             "url": "http://ds918.local:5678/"
           },
           {
             "type": "link",
             "addDate": null,
+            "title": "n8n",
+            "icon": "https://n8n.io/favicon-32x32.png",
+            "url": "http://ds918.local:29678/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
             "title": "Plex",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABO0lEQVQ4jZWSLUhDcRTFz/3/38ee+sZgyGDBMSyWYXFpQcSgxWYyiMEgNqMIZpMYtBlsVkXLirBi0SAiyEAE49AgG/O59/+4BkHcB2/shAv3cn4cDlwqFAoYRc7/ZX9RzeYZADP2qk79XfQDXafTO4cZAITgrYoamCAzmczf0upQLuRi1nqByWVNM6J6QyYlADi7lwrs+tYPzPZSOx1wUgKA2NC34cqM8lJmPDTZCa49e0kJAK6f3NcPIT3rpszqQqs0pYYAAI6qAQlIh13f7q59DgcA0O+k3g6DgZ3lLwBsoZU4OO8q6fS7V0pqetIaTToWF7djj29uEhD6vF7WWgnRke1IHF6FPYZeYGPOuEyqIwA+vkk1I0oC8mmeL1qjKY7kS0NePnjoUxewWdZEAEjHdFIbUA8AjfrePyUubEHYonpJAAAAAElFTkSuQmCC",
+            "icon": "https://www.plex.tv/wp-content/themes/plex/assets/img/favicons/favicon.ico",
             "url": "http://ds918.local:32400/"
           },
           {
@@ -69,7 +76,7 @@
             "type": "link",
             "addDate": null,
             "title": "MKVToolNix",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC5ElEQVQ4jYVTS2sTYRQ9M5MmzqOdpGmc0URNG20KLb7BR61mIYFY0YUIIii4cCcu/AHSf+BWcOFGEFHEVetOEKE+qG2tbYOjtmOTtEnzmM40M5mZLxkXUqhV8e7O5ZxzuS8GfwYzPDzcJ0nScZZlOyiKMkzTdP/C+0Xemkin0ycMw7heKBQCrVZrN8dx3RRFrVqWtf43A2oz6OnpEcPh8B1FUaY0TXsHgJai0sFOtl0+q6qfD7lu/gaQowBvQ0NvNhBFMWqaZlPTtEkAKwByxXzx9ZWlpYMpQkZDwMtHwJnNGt9m4HleiBCiA9CTyQv84VPnBjvp1onEk7sXYnY55AAhi2GupK9e/XAykbBGRkZaWw0omvbcYDDeMZi+dksMyjcZiuqo9J5B18RzuICjCIJWz+dPv1SUaDKZHP1tiLIsy4FA4EjvQObodmnv7b6EX9g/0AVNSmLOF8NkZJ/+rFZ6aNSrY36//5xhGOs+AEilUj6e53fXarWIaZqC09w2EI2ssZcvHkMkEkH56C7cs2ksfpgW6eKXkzsl0rBt8llV1XE6k8kEPM8bqtVq3MzMzFtCSMlcXwlGwjREMQiAQleYx85wC6aep3nW669WK4YgCC8ANHyVSmXQtu3e6enpVwBox3GyfnPBXS3lWlNTk3QsFoOqLmF8/A1WCvOGUVGVUik3Pz+vEADw6br+HUD/0NDQJZ7nNdM0WcNYw7Onj8nHj5NMd3cfs/BDx9v3X9aMqjLGc83F39aYzWYXAdxnGKbdcZw2Xdfnms0mV6/Xf2S/ruRYVtlj2w1iN1YnuEBjrr1dji8vLze33oE7Oztb3UhyHDeaSCR2+P3r6sLCxAMANoC17r4D/ZZluQAa//wFAHBd16QoqhIMBlOyLG8LhUJqPB4XaZo+XygUZi3L+gaA/PELW8IvCMJeSZIygiBECSF0uVz+VCwWxwAUAbT+Z7DRYmdbW1sUAOW6bgFAeaM6APwEF5pPHdxVe9sAAAAASUVORK5CYII=",
+            "icon": "https://mkvtoolnix.org/wp-content/uploads/2024/10/Mkvmerge256.png",
             "url": "http://ds918.local:5810/"
           },
           {
@@ -90,14 +97,14 @@
             "type": "link",
             "addDate": null,
             "title": "yt-dlp",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABO0lEQVQ4jY2SvS5EURSFv3NnCgqRyCi8gE4v3kH0ovAAummU8wKeQaOYhILQKEUypUaFUifRiMkd7s9SzDqcuXKZm6zsu//WPvsn0PIJApBZrQOoLfZXopPnsodmUKwkWAc27LoP8NiMaVboWvYEx4KxQMbYtt5/z18QjJLEJkaCJUFnph1BJtgVXDvwU5ALXoxcMLHv0DlTEjNeJFUmgkIwFCwbQ9sKwZNgK61+5MQPVy6tnyYxZ7aVglpQCc4FvS6wD1RAx3t/Ba6Au6TPG+AN2AZWgBrYAd4xa2Xm0i30k9lk/u/bVxqFIEfwYILCsvJzB0kLA9uqBN8Ee8kA46DixPtGOtwICU5ihQOvq23/TdSCS8FqiKcpWAM2gUV+TjXKkOgZ8BzgduaQ/jzR9ssNIVWYn0hhukq+AE/n+s4ATF8RAAAAAElFTkSuQmCC",
+            "icon": "https://avatars.githubusercontent.com/u/79589310",
             "url": "http://ds918.local:3033/"
           },
           {
             "type": "link",
             "addDate": null,
             "title": "Transmission",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADPElEQVQ4jW2SsU8bZwDFf+fvfHf2GdfGGAytIQIVKbSNIpUoQ5ZIQaq6ZumQof9CWmXIlHiNInVqvFWKulSlKokKY4naqki0USoUQUAUGkhAtmsD5zN3Z5/vu68LGVr1Nz3pPb3lPY0z7t+6ZX+QH7haKox8vPfkibYZRdM9KQckkIb2+WRyp3TpUmiOjW0cHR0tzt282QDQAH7b2pptr65+3bp7tzRiWXl5dET+3j2M2VkAeisrOHfuQCaj3EzGPSyXv3k0MvLZTw8fdvVKpaL32u1PnUbjfO/1a4I4RgNi3yeRSMCZ7rdaRK2W5qXT2Xo2e+PtUml5fn7+kciP5/PPVn+/H3bDfBCGvFKKHSlxymWacczh4SG7z5+z/uIFjcFB/OlpzbxwwXCUym6sry/p2qn2VmrAGnnv8mVK165xWqsRnJzw/coKJ9vbAKSiiBu3b5MuFDALBVq9rrbz8y/nut2urQshErqp14dHS5OjxWFkqcT+7i7R06fMTE8DsL21hZfN8v7FiyjThGZTWZapnZ6KhJ7NZjGE8ZdpWe+Up6YMv9PBGhzkSr2OYVkA6EJwZW6OXD5PQteJdT0yTatmWRZ6sVgkaST7nue7aNrQQC5HrlAgbdv8uLwMwHi5zLszM0RRRBiGtI6PO7l8LjBNE92yLEzTRCmlhBAIIQCQMmZhYQFN03jw5QOiKAJACEEYhtI0TFSs0NvtNslkEt/3CcMQIQR7L/fY2NhAQwMFm5ub7Py5w/jEOFJKPM/DcRyCICBx0Dyg9ndNua6L67o4jkMcxywtLb05KYuLi8RxjOM4tNttOp0O9UZdq53USEhfxjKSnud5eJ5HEARYKYtqtUoqlcK2barVKoZpEAQBvu/jeR7dsOtLT8a6EKIj+/KPeqP+UbPV7KesVBJgdGyUSqWCYRgUh4u4rguA7/thvV43VaSeCSF8rVKp6GtraxO2bX8xOTV5dWh4KLQtW+N/6Ha76uDgIL2/v7/sRd7nJubLN0Fx/fr1iUQi8YkQYjaVTtka/+5QShEEgReG4a9KqR8eJx/v8R1SP/Pl8fHxKyNvfJWJM9+K3tmW/6Hf78soitzOhx2HChLgH7volt08G4lAAAAAAElFTkSuQmCC",
+            "icon": "https://avatars.githubusercontent.com/u/223312",
             "url": "http://ds918.local:9091/"
           },
           {
@@ -1874,6 +1881,36 @@
                 "title": "NiceHash",
                 "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADNklEQVQ4jW2TS2xUdRjFf/c999LpTKfYh8UOfUSMqJGFEMCNtMVQiBjjI8RgbDQ+WOgCDERB3bAmLkpcG0gwrqhIEG1jNCmx1GqICp3ptNPp2Mq0nWk7M+3ce+f+/y6Epon+Nt/mnJNvcY7Cf4k8v6+zr7frsd6Oti0dUg3LxHQxMXB97Mq1weEvgNL/eP7l8L74idmf3qh4tz+UInlWiql+KbKXpMh9L/2FUZlJ/lru6ep6e6NHu3eVT97ZfvH86d3HjcY9emBGQFRBNZGKiVuVaI5FyJJG35snDxXy+YafR0aurgccObDl489O7XzPsx8BbHQrguo0gFcCzUIPx6guT6FU5hDlcQ4+d/Sp0dFf8snU9Ihi27RmruyfiMaihvBXKSQnceI7MBufwFQ10KN4QYnVxDW8lXk2d7SgxD9iJjtT3vrki63qq/tb3qqPaIb0PBZTObSaKLIyh1weA+GCWEXODwIummmQy6go/gLxRmPTCwd29ek9u+p6QOL5Jp6IUJxIoTlh7JjLA4+3U3U9CslZyvk1pBA4TRH8UgbDsuje29mtt7XY7cgAK+Sy+dHtuFu34S4tEpQLLGfT+K6PsJoJb6snFKnHDEfRNQ+qa7S1hNp0kAoINCrYYoJQbTNuuAmCemyjCmqIclCDblgYikRRQKkuAQJFlBU1PVeZRkqkFNy4tYjq38VmBttcAbEGQZlNagFLLKAGS/yZ+AsZrEB1hfRMblodvJkfAsHvqWX+SK0gpA+qB7IMorIeQlCi6hdJpHKkMzkISgwOp4eUWovOyW/23onVmlq+GND/XYgPXrIJqQKkBooG6Ky6kvNfzXLs5YdwQhrZv4uV1mcvxzU3IH+3EIQPdzXtcRyDHe2CT/vvMPxbgeKqT2K6xJfX57hxK8/7R5pxTImUPq+dGTmTSBe/Ve5VWT17rH3g1Ovxg4phgO/j+jCeqaCqKg/HazB1DVCQwIlzty+cuzh5dOMW5NDNwqXxqTXrmZ3R3Y6pqbomaYwZNNQZaKoEBHOLa/4rJ8dOX7g6e/z+mO5/sI4DDx7qbny39+m63s4Wu0NIRDJbSV7+ceHrgR/mPwcWNur/AaMfd1FClE0UAAAAAElFTkSuQmCC",
                 "url": "https://www.nicehash.com/index.jsp?p=calc"
+              }
+            ]
+          },
+          {
+            "type": "folder",
+            "addDate": null,
+            "title": "Neural Networks",
+            "children": [
+              {
+                "type": "link",
+                "addDate": null,
+                "title": "GGUF My Repo",
+                "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+                "url": "https://huggingface.co/spaces/ggml-org/gguf-my-repo"
+              },
+              {
+                "type": "link",
+                "addDate": null,
+                "title": "n8n",
+                "description": "<title>Powerful Workflow Automation Software &amp; Tools - n8n</title>",
+                "icon": "https://n8n.io/favicon-32x32.png",
+                "url": "https://n8n.io/workflows/"
+              },
+              {
+                "type": "link",
+                "addDate": null,
+                "title": "Arli",
+                "description": "Unlimited Generations and Zero-log LLM Inference API Platform",
+                "icon": "https://www.arliai.com/arli_text.svg",
+                "url": "https://www.arliai.com/"
               }
             ]
           },
