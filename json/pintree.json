@@ -1899,8 +1899,15 @@
               {
                 "type": "link",
                 "addDate": null,
+                "title": "YandexGPT перескажет",
+                "icon": "https://yastatic.net/s3/distribution/stardust/browser-summary-web/static/favicon.svg",
+                "url": "https://300.ya.ru/"
+              },
+              {
+                "type": "link",
+                "addDate": null,
                 "title": "n8n",
-                "description": "<title>Powerful Workflow Automation Software &amp; Tools - n8n</title>",
+                "description": "Powerful Workflow Automation Software &amp; Tools - n8n",
                 "icon": "https://n8n.io/favicon-32x32.png",
                 "url": "https://n8n.io/workflows/"
               },
