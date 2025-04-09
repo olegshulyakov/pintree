@@ -1610,9 +1610,16 @@
           {
             "type": "link",
             "addDate": null,
+            "title": "Stack Edit",
+            "icon": "https://stackedit.io/static/landing/favicon.ico",
+            "url": "https://stackedit.io/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
             "title": "StackShare",
             "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABS0lEQVQ4jWNkm/CLgRTARJJqojTI8zKIchKtIVWXcYkn844gZjtpRogICy6lExyY/JSZRDkZlOf90RNhDFRhPPT0P04NJuIM4WpMXuv/BKgwzXNjFmRnaD75D8UGLhaGaA3Gh58Zdj38z8DA0GvP3Hrq7/nXDOdf/zMSY/j0i+HOBwYUDTNdmO58YAhSZXSQ+c/KxCDAzjjj4n+I1LlXKJZDPa0pxNh37t+2+/+d5Bj1xRjf//j/5z92v0Ft6Dz970QE8+ffDMGb/776xnAxlsVfmXHj3f8MDAxK/AzffjO8+AbVwAiPaUYGBrihQSqMTVbMIZv/BKowuisw8bAxFB/8d/DJfxQNaGB7ILOGEKMwB4PKvD96oozeioyFB//h0wABhUZMrvKMguwM9cf/QQKQgAYGBgY9EYYvvxnufUT1NB5w6Q0Kl+TUCgBRRWlbnFcSjAAAAABJRU5ErkJggg==",
-            "url": "https://stackshare.io/"
+            "url": "https://stackshare.io/stackups/top"
           },
           {
             "type": "link",
