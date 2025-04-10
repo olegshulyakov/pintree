@@ -1891,6 +1891,34 @@
               {
                 "type": "link",
                 "addDate": null,
+                "title": "LM Arena",
+                "icon": "https://web.lmarena.ai/favicon.ico",
+                "url": "https://lmarena.ai/"
+              },
+              {
+                "type": "link",
+                "addDate": null,
+                "title": "Hugging Face",
+                "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+                "url": "https://huggingface.co/"
+              },
+              {
+                "type": "link",
+                "addDate": null,
+                "title": "Ollama",
+                "icon": "https://ollama.com/public/apple-touch-icon.png",
+                "url": "https://ollama.com/models"
+              },
+              {
+                "type": "link",
+                "addDate": null,
+                "title": "LM Studio",
+                "icon": "https://lmstudio.ai/_next/static/media/android-chrome-192x192.3a60873f.png",
+                "url": "https://lmstudio.ai/"
+              },
+              {
+                "type": "link",
+                "addDate": null,
                 "title": "GGUF My Repo",
                 "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
                 "url": "https://huggingface.co/spaces/ggml-org/gguf-my-repo"
