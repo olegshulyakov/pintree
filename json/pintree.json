@@ -619,21 +619,20 @@
               {
                 "type": "folder",
                 "addDate": null,
+                "title": "Boeing",
+                "children": []
+              },
+              {
+                "type": "folder",
+                "addDate": null,
+                "title": "Deutsche Bank",
+                "children": []
+              },
+              {
+                "type": "folder",
+                "addDate": null,
                 "title": "City Bank",
-                "children": [
-                  {
-                    "type": "link",
-                    "addDate": null,
-                    "title": "Citi Remote Office Web Portal",
-                    "url": "https://remoteoffice.europe.citigroup.com/"
-                  },
-                  {
-                    "type": "link",
-                    "addDate": null,
-                    "title": "Citi Virtual Workspace",
-                    "url": "https://workspace.europe.citi.com/vpn/index.html"
-                  }
-                ]
+                "children": []
               }
             ]
           },
@@ -660,32 +659,25 @@
                 "type": "folder",
                 "addDate": null,
                 "title": "Reged",
-                "children": [
-                  {
-                    "type": "link",
-                    "addDate": null,
-                    "title": "RegEd BitBucket",
-                    "url": "http://stash.reged.com/login?nextUrl=%2Fdashboard"
-                  },
-                  {
-                    "type": "link",
-                    "addDate": null,
-                    "title": "RegEd Confluence",
-                    "url": "http://confluence.reged.com/login.action?os_destination=%2Findex.action&permissionViolation=true"
-                  },
-                  {
-                    "type": "link",
-                    "addDate": null,
-                    "title": "Reged JIRA",
-                    "url": "http://jira.reged.com/secure/Dashboard.jspa"
-                  },
-                  {
-                    "type": "link",
-                    "addDate": null,
-                    "title": "Календари - RegEd",
-                    "url": "http://confluence.reged.com/display/TQT/calendars"
-                  }
-                ]
+                "children": []
+              },
+              {
+                "type": "folder",
+                "addDate": null,
+                "title": "Dude Solutions",
+                "children": []
+              },
+              {
+                "type": "folder",
+                "addDate": null,
+                "title": "Xceleration",
+                "children": []
+              },
+              {
+                "type": "folder",
+                "addDate": null,
+                "title": "GK Software",
+                "children": []
               }
             ]
           },
