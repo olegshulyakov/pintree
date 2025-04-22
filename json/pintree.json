@@ -1961,6 +1961,20 @@
             "title": "Планировщик помещений и дизайн интерьера - Planner 5D",
             "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACzElEQVQ4jXWTXWjXdRTGP9+X39v/xf03m4mipKDiIINVtpsaQTlDkLqxmwJfIFGMRQS5wItuahDqRUiYSTdKUCEmtRSlpC56QUIUX0Apa6zJ1mxrL7/38+1C2fY3OnfncM5zeJ7nHMX/xAs7924UkT1a64dwHE1ydezrj98dvb9PzU+e3/paQ/vBiyK8Yj3bqZRCpMQYjzxJ/lJGHStVceSLw/uvNgFsfKl3TbUabRNxL3t+sKQsC4o8a9qkjcHzA/IkLpTSJwsp3j91dP93avP21582njfge2EYxzPk8waVUnjWNgGlWU61VkcpyLN0k9XK7PL9KJye+odKFLJoYQOl7jIri5Kx8YkmgNUrljE8MgbaQzm31YrQyLKU0Pd5761XeaCtQSmCAn4fuk1f/yHEOcpSAMe+3h2cOvs9nw58S2RswzrtcuccYRSwfOliDnx4nPM//kKjpY5WGnEOozXtba2MjU9QlCVRGOCcA2CWoHOOLC9Ysridxx/pYHB4hJu/DVKrVtjXu4OOVSv4e2KS1pYFzCTJLKUmhUSEnu4uNjzVRWtjAW8fPML1m7d4bN1aDn70Cb/+McQ7b+7GGjPnDoAxhjhO6Os/xM69/WzZ1cflazfYsukZtNaICLcG/+TCpWtMzcTYec5oAK01SZrx08UrjN4Z5874JMMjY1QrIcZoUAoRh4jcf4h3KaRpxsrlS+l8eA1Dt0d5sL2Nnu4uPvvyHFPTMVopHl23ligKWLSwFa1Vs4ilCPVahe6uTuq1KiLCidPnOX7yDDNxwudffUNP9xM8++R6fr54hR8uXCIMAhCH2rz9jYEgip6bnpykFCHwPUoR4iSlEoUYrYmTlCgMkHt1z1pq9TpZlp6zSjtPG0sQBDgczjmsNrTU/dlXq1YqiBO0sdRr3r3fsDhJPAscLpO0w0kZOTcn0n/lmqsrFEWeJErLB/8CdUcwOSIqkcIAAAAASUVORK5CYII=",
             "url": "https://planner5d.com/ru/"
+          },
+          {
+            "type": "link",
+            "addDate": null,
+            "title": "UnattendedWinstall",
+            "icon": "https://github.githubassets.com/favicons/favicon.png",
+            "url": "https://github.com/memstechtips/UnattendedWinstall"
+          },
+          {
+            "type": "link",
+            "addDate": null,
+            "title": "Chris Titus Tech's Windows Utility",
+            "icon": "https://github.githubassets.com/favicons/favicon.png",
+            "url": "https://github.com/ChrisTitusTech/winutil"
           }
         ]
       },
