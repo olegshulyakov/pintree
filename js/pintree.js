@@ -1,7 +1,8 @@
 // Search functionality
 function searchBookmarks(query) {
-    return fetch('json/pintree.json')
-        .then(response => response.json())
+    return fetch("data/bookmarks.html")
+        .then(response => response.text())
+        .then(html => parseBookmarks(html))
         .then(data => {
             const results = searchInData(data, query.toLowerCase());
             renderBookmarks(results, [{ title: 'Search Results', children: results }]);
@@ -27,8 +28,9 @@ function searchInData(data, query) {
 
 // Clear search results and reset UI
 function clearSearchResults() {
-    return fetch('json/pintree.json')
-        .then(response => response.json())
+    return fetch("data/bookmarks.html")
+        .then(response => response.text())
+        .then(html => parseBookmarks(html))
         .then(data => {
             const secondLayer = data[0].children;
             renderNavigation(secondLayer, document.getElementById('navigation'));
@@ -40,8 +42,9 @@ function clearSearchResults() {
 }
 
 function searchBookmarks(query) {
-    return fetch('json/pintree.json')
-        .then(response => response.json())
+    return fetch("data/bookmarks.html")
+        .then(response => response.text())
+        .then(html => parseBookmarks(html))
         .then(data => {
             const results = searchInData(data, query.toLowerCase());
             renderBookmarks(results, [{ title: 'Search Results', children: results }]);
@@ -325,8 +328,9 @@ function renderBookmarks(data, path) {
 // Fetch bookmarks
 function fetchBookmarks() {
     // Fetch and render data
-    return fetch('json/pintree.json')
-        .then(response => response.json())
+    return fetch("data/bookmarks.html")
+        .then(response => response.text())
+        .then(html => parseBookmarks(html))
         .then(data => {
             // Use the first layer of the data directly
             const firstLayer = data;
@@ -349,6 +353,78 @@ function fetchBookmarks() {
             // Hide loading spinner
             document.getElementById('loading-spinner').style.display = 'none';
         });
+}
+
+function parseBookmarks(text) {
+    const lines = text.split("\n");
+    const stack = [];
+    let currentFolder = { type: "folder", children: [] };
+    let folderName = "Bookmarks";
+    let attributes;
+
+    for (const line of lines) {
+        const trimmed = line.trim();
+        // Folder name
+        if (trimmed.startsWith("<DT><H3")) {
+            const folderMatch = trimmed.match(/<DT><H3([^>]*)>([^<]*)<\/H3>/);
+            if (folderMatch) {
+                attributes = parseAttributes(folderMatch[1] || "");
+                folderName = folderMatch[2];
+            }
+        }
+        // Folder start
+        else if (trimmed === "<DL><p>") {
+            const newFolder = {
+                type: "folder",
+                ...attributes,
+                title: folderName,
+                children: [],
+            };
+            currentFolder.children.push(newFolder);
+            stack.push(newFolder);
+            currentFolder = newFolder;
+        }
+        // Folder end
+        else if (trimmed === "</DL><p>") {
+            if (stack.length > 1) {
+                stack.pop();
+                currentFolder = stack[stack.length - 1];
+            }
+        }
+        // Bookmark item
+        else if (trimmed.startsWith("<DT><A")) {
+            const linkMatch = trimmed.match(/<DT><A\s+HREF="([^"]*)"([^>]*)>([^<]*)<\/A>/);
+            if (linkMatch && linkMatch[1]) {
+                const attributes = parseAttributes(linkMatch[2] || "");
+
+                currentFolder.children.push({
+                    type: "link",
+                    addDate: null,
+                    title: linkMatch[3],
+                    icon: attributes["icon"],
+                    url: linkMatch[1],
+                });
+            }
+        }
+    }
+
+    return stack.length > 0 ? stack[0].children : [];
+}
+
+// Helper function to convert snake_case to camelCase
+function toCamelCase(snakeCaseStr) {
+    return snakeCaseStr.toLowerCase().replace(/(_\w)/g, (match) => match[1].toUpperCase());
+}
+
+// Helper function to parse attributes from a tag
+function parseAttributes(attrText) {
+    const attributes = {};
+    const attrMatches = attrText.matchAll(/(\w+)="([^"]*)"/g);
+    for (const match of attrMatches) {
+        const camelCaseName = toCamelCase(match[1]);
+        attributes[camelCaseName] = match[2];
+    }
+    return attributes;
 }
 
 // Theme toggle functionality
