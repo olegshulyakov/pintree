@@ -1926,6 +1926,20 @@
               {
                 "type": "link",
                 "addDate": null,
+                "title": "DeepSeek",
+                "icon": "https://cdn.deepseek.com/chat/icon.png",
+                "url": "https://chat.deepseek.com/"
+              },
+              {
+                "type": "link",
+                "addDate": null,
+                "title": "Qwen",
+                "icon": "https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.86/favicon.png",
+                "url": "https://chat.qwen.ai/"
+              },
+              {
+                "type": "link",
+                "addDate": null,
                 "title": "GGUF My Repo",
                 "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
                 "url": "https://huggingface.co/spaces/ggml-org/gguf-my-repo"
