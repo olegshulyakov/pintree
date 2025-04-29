@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Converter</title>
+    <meta name="keywords" content="Bookmarks, Link Management, Export Bookmarks, Website Bookmarks" />
+    <meta name="description" content="A powerful tool that helps you manage your browser bookmarks." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Styles -->
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
+          "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 min-h-screen">
+    <div class="flex">
+      <pre id="json-display"></pre>
+    </div>
+
+    <script>
+      async function loadBookmarks() {
+        try {
+          const response = await fetch("data/bookmarks.html");
+          const html = await response.text();
+
+          // Process the bookmarks
+          const bookmarksData = parseBookmarks(html);
+
+          document.getElementById("json-display").textContent = JSON.stringify(bookmarksData, null, 2);
+        } catch (error) {
+          console.error("Error loading bookmarks:", error);
+          const errorElement = document.createElement("p");
+          errorElement.textContent = "Error loading bookmarks.  Check console for details.";
+        }
+      }
+
+      function parseBookmarks(text) {
+        const lines = text.split("\n");
+        const stack = [];
+        let currentFolder = { type: "folder", children: [] };
+        let folderName = "Bookmarks";
+        let attributes;
+
+        for (const line of lines) {
+          const trimmed = line.trim();
+          // Folder name
+          if (trimmed.startsWith("<DT><H3")) {
+            const folderMatch = trimmed.match(/<DT><H3([^>]*)>([^<]*)<\/H3>/);
+            if (folderMatch) {
+              attributes = parseAttributes(folderMatch[1] || "");
+              folderName = folderMatch[2];
+            }
+          }
+          // Folder start
+          else if (trimmed === "<DL><p>") {
+            const newFolder = {
+              type: "folder",
+              ...attributes,
+              title: folderName,
+              children: [],
+            };
+            currentFolder.children.push(newFolder);
+            stack.push(newFolder);
+            currentFolder = newFolder;
+          }
+          // Folder end
+          else if (trimmed === "</DL><p>") {
+            if (stack.length > 1) {
+              stack.pop();
+              currentFolder = stack[stack.length - 1];
+            }
+          }
+          // Bookmark item
+          else if (trimmed.startsWith("<DT><A")) {
+            const linkMatch = trimmed.match(/<DT><A\s+HREF="([^"]*)"([^>]*)>([^<]*)<\/A>/);
+            if (linkMatch && linkMatch[1]) {
+              const attributes = parseAttributes(linkMatch[2] || "");
+
+              currentFolder.children.push({
+                type: "link",
+                addDate: null,
+                title: linkMatch[3],
+                icon: attributes["icon"],
+                url: linkMatch[1],
+              });
+            }
+          }
+        }
+
+        return stack.length > 0 ? stack[0].children : [];
+      }
+
+      // Helper function to convert snake_case to camelCase
+      function toCamelCase(snakeCaseStr) {
+        return snakeCaseStr.toLowerCase().replace(/(_\w)/g, (match) => match[1].toUpperCase());
+      }
+
+      // Helper function to parse attributes from a tag
+      function parseAttributes(attrText) {
+        const attributes = {};
+        const attrMatches = attrText.matchAll(/(\w+)="([^"]*)"/g);
+        for (const match of attrMatches) {
+          const camelCaseName = toCamelCase(match[1]);
+          attributes[camelCaseName] = match[2];
+        }
+        return attributes;
+      }
+
+      loadBookmarks();
+    </script>
+  </body>
+</html>
