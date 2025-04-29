@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favicon Finder</title>
+  </head>
+  <body>
+    <h1>Favicon Example</h1>
+    <div id="favicon-container"></div>
+    <script>
+      // Function to get URL parameter by name
+      function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, "\\$&");
+        const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return "";
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      /**
+       * Retrieves the highest resolution favicon URL for a given website URL,
+       * including apple-touch-icon.
+       *
+       * @param {string} websiteUrl The URL of the website.
+       * @returns {Promise<string|null>} A promise that resolves with the favicon URL (string) or null if not found.
+       */
+      async function getFaviconUrl(websiteUrl) {
+        try {
+          const urlObject = new URL(websiteUrl); // Ensure we have a valid URL
+
+          // First, try the standard /favicon.ico location
+          const faviconIcoUrl = `${urlObject.protocol}//${urlObject.hostname}/favicon.ico`;
+          if (await faviconExists(faviconIcoUrl)) {
+            return faviconIcoUrl;
+          }
+
+          // If favicon.ico doesn't exist, parse the website's HTML for high-resolution icon links
+          const response = await fetch(websiteUrl);
+          if (!response.ok) {
+            console.error(`Error fetching website: ${response.status} ${response.statusText}`);
+            return null; // Or throw an error, depending on how you want to handle it
+          }
+
+          const htmlText = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(htmlText, "text/html");
+
+          // Find all icon links (including apple-touch-icon)
+          const iconLinks = Array.from(
+            doc.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"], link[rel="apple-touch-icon"]')
+          );
+
+          if (iconLinks.length === 0) {
+            return null; // No favicon found
+          }
+
+          // Sort the icon links based on size (if available)
+          iconLinks.sort((a, b) => {
+            const aSizes = a.getAttribute("sizes");
+            const bSizes = b.getAttribute("sizes");
+
+            // If 'sizes' attribute is present, compare the sizes
+            if (aSizes && bSizes) {
+              const aSizeValue = parseSizes(aSizes);
+              const bSizeValue = parseSizes(bSizes);
+              return bSizeValue - aSizeValue; // Sort in descending order (larger sizes first)
+            } else if (aSizes) {
+              // If only 'a' has sizes, it's considered larger
+              return -1;
+            } else if (bSizes) {
+              // If only 'b' has sizes, it's considered larger
+              return 1;
+            }
+            // Prioritize apple-touch-icon if sizes are unavailable
+            if (a.rel === "apple-touch-icon" && b.rel !== "apple-touch-icon") {
+              return -1;
+            } else if (a.rel !== "apple-touch-icon" && b.rel === "apple-touch-icon") {
+              return 1;
+            }
+            // If no size is specified, prioritize based on media type (e.g., image/png over image/x-icon)
+            const aType = a.getAttribute("type") || "";
+            const bType = b.getAttribute("type") || "";
+
+            if (aType.includes("png") && !bType.includes("png")) {
+              return -1; // Prioritize PNG
+            } else if (!aType.includes("png") && bType.includes("png")) {
+              return 1; // Prioritize PNG
+            }
+
+            // If no size or preferred media type is available, maintain original order
+            return 0;
+          });
+
+          // Get the href of the highest-resolution favicon
+          let bestIconHref = iconLinks[0].getAttribute("href");
+
+          // Handle relative URLs
+          if (!bestIconHref.startsWith("http")) {
+            // Construct fully qualified URL
+            return new URL(bestIconHref, urlObject.origin).href;
+          } else {
+            return bestIconHref;
+          }
+        } catch (error) {
+          console.error("Error getting favicon:", error);
+          return null; // Return null in case of any error
+        }
+      }
+
+      /**
+       * Parses the 'sizes' attribute and returns a size value.
+       * @param {string} sizes The 'sizes' attribute value (e.g., "16x16", "32x32", "any").
+       * @returns {number} The size value (numeric, or Infinity if "any").
+       */
+      function parseSizes(sizes) {
+        if (sizes.toLowerCase() === "any") {
+          return Infinity;
+        }
+
+        const [width, height] = sizes.split("x").map(Number);
+        if (!isNaN(width) && !isNaN(height)) {
+          return width * height; // Can also add width + height, or any other calculation.
+        }
+        // If the sizes string couldn't be parsed return 0 (smallest)
+        return 0;
+      }
+
+      /**
+       * Checks if a given URL exists (responds with HTTP 200).
+       * @param {string} url The URL to check.
+       * @returns {Promise<boolean>} True if the resource exists, false otherwise.
+       */
+      async function faviconExists(url) {
+        try {
+          const response = await fetch(url, { method: "HEAD" }); // HEAD request is faster
+          return response.ok; // Returns true if the status code is in the 200-299 range
+        } catch (error) {
+          // Network error or other issues (e.g., CORS). Assume it doesn't exist.
+          return false;
+        }
+      }
+
+      async function imageUrlToDataUrl(imageUrl) {
+        try {
+          // Fetch the image
+          const response = await fetch(imageUrl);
+          const blob = await response.blob();
+
+          // Create an image element
+          const img = new Image();
+          const imgLoadPromise = new Promise((resolve, reject) => {
+            img.onload = resolve;
+            img.onerror = reject;
+          });
+
+          // Set image source to a blob URL
+          img.src = URL.createObjectURL(blob);
+          await imgLoadPromise;
+
+          // Create canvas and draw image
+          const canvas = document.createElement("canvas");
+          canvas.width = img.naturalWidth;
+          canvas.height = img.naturalHeight;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0);
+
+          // Convert to data URL
+          const dataUrl = canvas.toDataURL("image/png");
+
+          document.getElementById("favicon-container").appendChild(canvas);
+
+          // Clean up
+          URL.revokeObjectURL(img.src);
+
+          // Create div and show base64
+          const div = document.createElement("div");
+          div.textContent = dataUrl;
+          document.getElementById("favicon-container").appendChild(div);
+
+          console.log("Data URL:", dataUrl);
+
+          return dataUrl;
+        } catch (error) {
+          console.error("Error converting image to data URL:", error);
+          throw error;
+        }
+      }
+
+      // Get the website URL from the query parameter
+      const websiteUrl = getParameterByName("url");
+
+      if (websiteUrl) {
+        getFaviconUrl(websiteUrl)
+          .then((faviconUrl) => {
+            if (faviconUrl) {
+              console.log(`Favicon URL for ${websiteUrl}: ${faviconUrl}`);
+              // You can now use the faviconUrl to display the favicon!
+              // const img = document.createElement("img");
+              // img.src = faviconUrl;
+              // img.alt = `Favicon for ${websiteUrl}`;
+              // document.getElementById("favicon-container").appendChild(img);
+
+              imageUrlToDataUrl(faviconUrl);
+            } else {
+              console.log(`Favicon not found for ${websiteUrl}`);
+              document.getElementById("favicon-container").textContent = `Favicon not found for ${websiteUrl}`;
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            document.getElementById("favicon-container").textContent = `Error finding favicon: ${error}`;
+          });
+      } else {
+        document.getElementById("favicon-container").textContent =
+          "Please provide a URL in the query parameter (e.g., ?url=https://www.example.com)";
+      }
+    </script>
+  </body>
+</html>
